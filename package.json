@@ -1,0 +1,27 @@
+{
+  "name": "security-rules-test",
+  "version": "1.0.0",
+  "description": "Package for testing security rules.",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha --timeout 0 --require ts-node/register/transpile-only --recursive \"test/**/*_test.ts\" --reporter spec -u tdd --exclude \"node_modules/**\""
+  },
+  "dependencies": {
+    "ts-node": "^10.9.2",
+    "uuid": "^13.0.0"
+  },
+  "devDependencies": {
+    "@firebase/app": "^0.14.10",
+    "@firebase/rules-unit-testing": "^5.0.0",
+    "@types/chai": "^5.2.3",
+    "@types/chai-as-promised": "^8.0.2",
+    "@types/mocha": "^10.0.10",
+    "@types/uuid": "^11.0.0",
+    "chai": "^6.2.2",
+    "chai-as-promised": "^8.0.2",
+    "mocha": "^11.7.5"
+  }
+}
