@@ -40,7 +40,7 @@ describe('/files/{id} storage rules', async () => {
   });
 
   describe('update', () => {
-    it('denies overwriting another user resource', async () => {
+    it('denies updating a file', async () => {
       const path = `files/${v4()}`;
       await testEnv
         .authenticatedContext(uid)
